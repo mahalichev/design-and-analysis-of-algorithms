@@ -92,7 +92,7 @@ make
 ```
 // Run example
 ./a.out
- ab
+ab
 ababba
 ```
 
