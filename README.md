@@ -13,7 +13,6 @@ Input data:
 - Number of required squares
 - List of lengths of required squares
 
-
 Output data:
 - Number of squares
 - Coordinates of the upper left corners and lengths of the squares
@@ -34,3 +33,43 @@ make
 Directory: `./backtracking`
 
 ## 🌊 Maximum flow
+Implementation of the Ford-Fulkerson algorithm for finding the maximum flow in the network.
+
+#### Individualization
+Search according to the rule: each time a transition is performed along the edge that has the maximum residual capacity. If there are several such edges, then select the one that was discovered earlier in the current path search.
+
+Input data:
+- Mode (1 - Standart; 2 - Individualization)
+- Number of directed edges of the graph
+- Source
+- Sink
+- Graph edge
+- Graph edge
+- ...
+
+Output data:
+- Maximum flow value
+- Edge of the graph with the actual value of the flowing flow
+- Edge of the graph with the actual value of the flowing flow
+- ...
+
+To run the program, enter the following commands:
+```
+make
+./a.out
+```
+```
+// Run example
+./a.out
+1
+5
+a
+d
+a b 1000
+a c 1000
+b d 1
+b c 1000
+c d 1000
+```
+
+Directory: `./ford-fulkerson`
