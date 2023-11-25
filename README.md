@@ -97,3 +97,47 @@ ababba
 ```
 
 Directory: `./knuth-morris-pratt`
+
+## 🌳 Aho-Corasick algorithm
+This program uses the Aho-Corasick algorithm to solve the problem of accurately searching for a set of samples.
+
+Modification #1: solving the exact search problem for one pattern with a wild card. For example, sample "ab??c?" with a wild card "?" appears twice in the text "xabvccababbcax".
+
+Modification #2: calculate the maximum number of edges emanating from one vertex in a bore. Cut all found patterns from the search string and display the rest of the search string.
+
+Input data (Aho-Corasick):
+- Text T
+- Number of patterns N
+- Pattern #1
+- ...
+- Pattern #N
+
+Output data (Aho-Corasick):
+- All occurrences of patterns. Occurrences are represented as a starting index and a pattern number
+- Maximum number of edges emanating from one vertex in a bore
+- The rest of the string
+
+Input data (Wild card):
+- Text T
+- Pattern
+- Wild card
+
+Output data (Wild card):
+- All occurrences of pattern. Occurrences are represented as a starting index
+- Maximum number of edges emanating from one vertex in a bore
+- The rest of the string
+
+To run the program, enter the following commands:
+```
+make
+./a.out <mode (a - Aho-Corasick, w - Wildcard)>
+```
+```
+// Run example
+./a.out w
+ATNAAANTAC
+A??A
+?
+```
+
+Directory: `./aho-corasick`
