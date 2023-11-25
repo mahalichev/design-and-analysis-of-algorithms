@@ -73,3 +73,27 @@ c d 1000
 ```
 
 Directory: `./ford-fulkerson`
+
+## 🟰 Knuth–Morris–Pratt algorithm
+Knuth–Morris–Pratt algorithm is implemented for searching the number of occurrences of a substring in a string.
+
+Input data:
+- First string P
+- Second string T
+
+Output data:
+- Indices of the beginning of occurrences of P in T, separated by a comma (if P is not included in T, then output -1).
+
+To run the program, enter the following commands:
+```
+make
+./a.out
+```
+```
+// Run example
+./a.out
+ ab
+ababba
+```
+
+Directory: `./knuth-morris-pratt`
